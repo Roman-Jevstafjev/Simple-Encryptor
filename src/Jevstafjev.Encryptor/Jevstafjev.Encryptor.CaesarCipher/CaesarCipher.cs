@@ -47,7 +47,7 @@ namespace Jevstafjev.Encryptor.CaesarCipher
                 }
 
                 var baseLetter = char.IsUpper(item) ? 'A' : 'a';
-                var shifted = (char)(baseLetter + (item - baseLetter - Shift) % 26);
+                var shifted = (char)(baseLetter + (item - baseLetter - Shift + 26) % 26);
 
                 stringBuilder.Append(shifted);
             }
