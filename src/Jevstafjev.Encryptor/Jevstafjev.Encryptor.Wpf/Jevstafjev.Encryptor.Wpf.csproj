@@ -14,7 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Plugins\" />
+    <ProjectReference Include="..\Jevstafjev.Encryptor.Contracts\Jevstafjev.Encryptor.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Plugins\Jevstafjev.Encryptor.CaesarCipher.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

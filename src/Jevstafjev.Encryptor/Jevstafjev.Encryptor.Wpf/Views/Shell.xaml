@@ -25,7 +25,7 @@
             <TextBlock Text="Cipher method" Margin="0,0,0,5"/>
             <ListBox Margin="0,0,0,10" SelectionMode="Single" ItemsSource="{Binding CipherNames}" SelectedItem="{Binding SelectedCipherName}" />
             <Button Margin="0,0,0,5" Height="25" Content="Encrypt" Command="{Binding EncryptCommand}" />
-            <Button Height="25" Content="Decrypt" Command="{Binding EncryptCommand}" />
+            <Button Height="25" Content="Decrypt" Command="{Binding DecryptCommand}" />
         </StackPanel>
     </Grid>
 </Window>
