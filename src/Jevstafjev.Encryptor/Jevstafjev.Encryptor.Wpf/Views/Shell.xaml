@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jevstafjev.Encryptor.Wpf.Views"
         mc:Ignorable="d"
-        Title="Shell" Height="450" Width="800">
+        Title="Simple Encryptor" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="10">
+            <TextBlock Text="Input" Margin="0,0,0,5"/>
+            <TextBox Margin="0,0,0,10" Height="100" TextWrapping="Wrap" AcceptsReturn="True" 
+                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Text="{Binding Input}" />
+            <TextBlock Text="Result" Margin="0,0,0,5" />
+            <TextBox Height="100" TextWrapping="Wrap" AcceptsReturn="True" 
+                 VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" IsReadOnly="True" Text="{Binding Result}" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Cipher method" Margin="0,0,0,5"/>
+            <ListBox Margin="0,0,0,10" SelectionMode="Single" ItemsSource="{Binding CipherNames}" SelectedItem="{Binding SelectedCipherName}" />
+            <Button Margin="0,0,0,5" Height="25" Content="Encrypt" Command="{Binding EncryptCommand}" />
+            <Button Height="25" Content="Decrypt" Command="{Binding EncryptCommand}" />
+        </StackPanel>
     </Grid>
 </Window>
