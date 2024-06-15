@@ -28,6 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Plugins\Jevstafjev.Encryptor.AtbashCipher.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Plugins\Jevstafjev.Encryptor.CaesarCipher.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
