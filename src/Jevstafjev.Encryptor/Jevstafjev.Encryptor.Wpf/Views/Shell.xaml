@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Jevstafjev.Encryptor.Wpf.Views"
         mc:Ignorable="d"
+        Icon="/Resources/Orange.ico"
         Title="Simple Encryptor" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <Grid.ColumnDefinitions>
