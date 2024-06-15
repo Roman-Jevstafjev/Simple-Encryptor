@@ -5,6 +5,12 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jevstafjev.Encryptor.Wpf", "Jevstafjev.Encryptor.Wpf\Jevstafjev.Encryptor.Wpf.csproj", "{1C085C4B-7FE2-4114-9964-34F641C8628F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jevstafjev.Encryptor.Contracts", "Jevstafjev.Encryptor.Contracts\Jevstafjev.Encryptor.Contracts.csproj", "{A7CFE5F1-469C-4467-BDA3-5EB5AE9A98A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jevstafjev.Encryptor.CaesarCipher", "Jevstafjev.Encryptor.CaesarCipher\Jevstafjev.Encryptor.CaesarCipher.csproj", "{780B3B47-7125-484A-A8D2-D9EEA82CC271}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ciphers", "Ciphers", "{6EF1056A-D95C-436A-819F-F594D1748121}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +21,20 @@ Global
 		{1C085C4B-7FE2-4114-9964-34F641C8628F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C085C4B-7FE2-4114-9964-34F641C8628F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C085C4B-7FE2-4114-9964-34F641C8628F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7CFE5F1-469C-4467-BDA3-5EB5AE9A98A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7CFE5F1-469C-4467-BDA3-5EB5AE9A98A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7CFE5F1-469C-4467-BDA3-5EB5AE9A98A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7CFE5F1-469C-4467-BDA3-5EB5AE9A98A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780B3B47-7125-484A-A8D2-D9EEA82CC271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{780B3B47-7125-484A-A8D2-D9EEA82CC271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780B3B47-7125-484A-A8D2-D9EEA82CC271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{780B3B47-7125-484A-A8D2-D9EEA82CC271}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{780B3B47-7125-484A-A8D2-D9EEA82CC271} = {6EF1056A-D95C-436A-819F-F594D1748121}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC1E3D14-0151-4589-BEFB-7C69847231CC}
